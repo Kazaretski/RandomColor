@@ -1,0 +1,29 @@
+<% let col = color; %><!DOCTYPE html>
+<html>
+<head>
+    <title>Example Color</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>body{background-color:#<%= col %>}</style>
+</head>
+<body>
+    <main>
+        <h1>Example Color</h1>
+    </main>
+    <aside>
+        <article id="topArticle">
+            <section id="rawValues">
+                <div id="valueRGB">
+                    <p>RGB</p><img src="../img/copy.png"><p><%= col[0] %>&comma;<%= col[1] %>&comma;<%= col[2] %></p>
+                </div>
+            </section>
+            <section id="notableUses">
+
+            </section>
+        </article>
+        <article id="bottomArticle">
+
+        </article>
+    </aside>
+</body>
+</html>

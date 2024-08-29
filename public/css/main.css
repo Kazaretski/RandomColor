@@ -1,0 +1,29 @@
+:root {
+    --customDark: #2B2B2B;
+}
+@font-face {
+    font-family: Outfit;
+    src: url("../font/Outfit.ttf");
+}
+body {
+    grid-template-columns: 50% 50%;
+    font-family: Outfit, sans-serif;
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+/* ------------------------------------------------- */
+#rawValues div p, #rawValues div img {
+    color: var(--customDark);
+    vertical-align: middle;
+    display: inline-block;
+}
+#rawValues div p:first-of-type {
+    font-weight: bolder;
+}
+#rawValues img {
+    height: 20px;
+}
