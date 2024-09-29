@@ -1,10 +1,16 @@
 :root {
+    --customLight: #DADADA;
     --customDark: #2B2B2B;
 }
 @font-face {
     font-family: Outfit;
     src: url("../font/Outfit.ttf");
 }
+::selection {
+    background-color: var(--customDark);
+    color: var(--customLight);
+}
+/* ------------------------------------------------- */
 body {
     grid-template-columns: 50% 50%;
     font-family: Outfit, sans-serif;
@@ -13,17 +19,37 @@ body {
     margin: 0;
 }
 h1 {
+    border-bottom: 5px solid black;
+    display: inline-block;
+    padding-bottom: 0.5rem;
     text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+}
+aside {
+    background-color: var(--customLight);
+    border-left: solid 2px #000;
+    user-select: none;
 }
 /* ------------------------------------------------- */
-#rawValues div p, #rawValues div img {
-    color: var(--customDark);
-    vertical-align: middle;
+#rawValues div {
     display: inline-block;
 }
-#rawValues div p:first-of-type {
+#rawValues div:first-of-type {
     font-weight: bolder;
+    text-align: right;
+}
+#rawValues div:nth-of-type(2) {
+    cursor: pointer;
+}
+#rawValues div p {
+    color: var(--customDark);
+    line-height: 15px;
+    font-size: 18px;
+    display: block;
 }
 #rawValues img {
     height: 20px;
+    width: 20px;
+    margin: 0;
 }

@@ -4,7 +4,7 @@
     <title>Example Color</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>body{background-color:#<%= col %>}</style>
+    <script src="js/colorInit.js" defer></script>
 </head>
 <body>
     <main>
@@ -13,12 +13,53 @@
     <aside>
         <article id="topArticle">
             <section id="rawValues">
-                <div id="valueRGB">
-                    <p>RGB</p><img src="../img/copy.png"><p><%= col[0] %>&comma;<%= col[1] %>&comma;<%= col[2] %></p>
+                <div>
+                    <p>RGB</p>
+                    <p>HEX</p>
+                    <p>CMYK</p>
+                    <p>HSV</p>
+                    <p>HWB</p>
+                    <p>DEC</p>
+                    <p>NCOL</p>
+                    <p>LAB</p>
+                    <p>XYZ</p>
+                    <p>LCH</p>
+                    <p>LUV</p>
+                    <p>HWB</p>
+                </div>
+                <div>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                    <p>&#128203;</p>
+                </div>
+                <div>
+                    <p id="valueRGB"><%= col[0] %>&comma;<%= col[1] %>&comma;<%= col[2] %></p>
+                    <p id="valueHEX">&num;<%= col[0].toString(16).padStart(2, "0").toUpperCase() %><%= col[1].toString(16).padStart(2, "0").toUpperCase() %><%= col[2].toString(16).padStart(2, "0").toUpperCase() %></p>
+                    <p id="valueCMYK">CMYK</p>
+                    <p id="valueHSV">HSV</p>
+                    <p id="valueHWB">HWB</p>
+                    <p id="valueDEC">DEC</p>
+                    <p id="valueNCOL">NCOL</p>
+                    <p id="valueLAB">LAB</p>
+                    <p id="valueXYZ">XYZ</p>
+                    <p id="valueLCH">LCH</p>
+                    <p id="valueLUV">LUV</p>
+                    <p id="valueHWB">HWB</p>
                 </div>
             </section>
             <section id="notableUses">
-
+                <ul>
+                    <li>&lpar;None Recorded&rpar;</li>
+                </ul>
             </section>
         </article>
         <article id="bottomArticle">
